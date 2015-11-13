@@ -35,3 +35,10 @@ div#username{
 a:hover {
 	text-decoration: none;
 }
+
+.first{
+	margin-top: 30px;
+}
+button, input, optgroup, select, textarea {
+    margin: 5px;
+}
