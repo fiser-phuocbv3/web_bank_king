@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#menu1").click(function(){
+				$("#menu-item1").slideToggle();
+			});
+			$("#menu2").click(function(){
+				$("#menu-item2").slideToggle();
+			});
+			$("#menu3").click(function(){
+				$("#menu-item3").slideToggle();
+			});
+			$("#menu4").click(function(){
+				$("#menu-item4").slideToggle();
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<div id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div style="color:#FFFFFF">
+			<div id="left" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<label id="logo">Bker-eBanking</label>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
+			<div id="username" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<label id="user"><b style="font-size: 16px">Nguyen Van A</b>[Thoat dang nhap]</label>
+			</div>
+		</div>
+	</div><br/>
+
+	<div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			<div class="list-group">
+				<a id="menu1" href="#" class="list-group-item list-group-item-info">Thông tin tài khoản</a>
+					<div id="menu-item1" style="display: none"><a href="#" class="list-group-item">Lịch sử giao dịch</a></div>
+				<a id="menu2" href="#" class="list-group-item list-group-item-info">Chuyển khoản</a>
+					<div id="menu-item2" style="display: none">
+						<a href="#" class="list-group-item">Chuyển tới tài khoản tại ngân hàng</a>
+						<a href="#" class="list-group-item">Chuyển tới tài khoản ở ngân hàng khác</a>
+					</div>
+				
+				<a id="menu3" href="#" class="list-group-item list-group-item-info">Dịch vụ</a>
+					<div id="menu-item3" style="display: none">
+						<a href="#" class="list-group-item">Thanh toán hóa đơn</a>
+						<a href="#" class="list-group-item">Gửi tiết kiệm online</a>
+						<a href="#" class="list-group-item">Vay tiền online</a>
+					</div>
+				<a id="menu4" href="#" class="list-group-item list-group-item-info">Hỗ trợ</a>
+					<div id="menu-item4" style="display: none">
+						<a href="#" class="list-group-item">Đổi mật khẩu</a>
+						<a href="#" class="list-group-item">Tra cứu</a>
+					</div>
+			</div>		
+		</div>
+		
+		
+		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+			<div id="right" class="panel panel-info">
+				<div class="panel-heading"><a href="index.html">Trang chu</a> / Tìm địa chỉ ATM</div>
+				<div class="panel-body">
+
+					<form action="" method="">	
+
+						<div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						
+							<label>Chọn địa điểm</label>
+		                    <button class="btn btn-default dropdown-toggle btn-primary" type="button" data-toggle="dropdown" style="margin-left: 30px">Chọn địa điểm
+		                                        <span class="caret"></span></button>
+					
+						</div>
+
+					</form>	
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="margin-top: 30px">
+						<div class="panel panel-info">
+							<table class="table table-hover">
+								<tr class="success">		
+									<td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Điểm đặt máy ATM</td>
+									<td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Số lượng</td>
+									<td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">Địa chỉ</td>
+									<td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Thời gian phục vụ</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">a</td>
+									<td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">b</td>
+									<td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">c</td>
+									<td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">d</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+		<div id="contact">19001009</div>
+		<div id="email">bker.ebanking@fpt.com.vn</div>
+		<div id="address">20th Floor, tòa nhà Kaengnam 72 Phạm Hùng</div>
+	</div>
+</body>
+</html>

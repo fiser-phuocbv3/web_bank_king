@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng nhập</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-2.1.4.js"></script>
+</head>
+<body style="background: #778899;">
+	<form action="" method="">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 100px">
+		<div class="col-lg-4 col-md-3 col-sm-3 col-xs-0"></div>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading text-center"><h4>Chào mừng đến với Bker-eBanking</h4></div>
+			  	<div class="panel-body">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div >
+							<label>Tài khoản</label>
+							<input type="text" class="form-control" id="user" name="user" placeholder="Nhập tài khoản">
+						</div>
+						<div style="margin-top: 10px">
+							<label>Mật khẩu</label>
+							<input type="password" class="form-control" id="pass" name="pass" placeholder="Nhập mật khẩu">
+						</div>
+
+						<div style="margin-top: 10px">
+                            <label class="control-label">Mã xác nhận</label>
+                            <img src="images/maxacnhan.png" class="img-thumbnail" style="height: 40px; width: 100px">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                            </button>
+                    	</div>
+
+						<div style="margin-top: 10px">
+							<label>Nhập mã xác nhận</label>
+							<input type="text" class="form-control" id="code" name="code" placeholder="Nhập mã xác nhận">
+						</div>
+										
+						<div style="margin-top: 10px">
+							<input  type="button" class="btn btn-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" value="Đăng nhập" onclick="checkUser()">
+						</div>
+
+						<div style="margin-top: 10px">
+							<label><a href="retrievepass.html">Quên mật khẩu</a></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-3 col-sm-3 col-xs-0"></div>
+	</div>
+	</form>
+</body>
+
+<script type="text/javascript">
+	function checkUser() {
+		var user = $("#user").val();
+		var pass = $("#pass").val();
+		console.log(user + " " + pass);
+		if (user=="abc" && pass=="123456") {
+			window.location.href="accountInfor.html";
+		} else alert("some thing is wrong");
+	}
+</script>
+</html>

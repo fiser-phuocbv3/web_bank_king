@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lấy lại mật khẩu</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="min-height: 80px;">
+        <div style="color:#FFFFFF">
+            <div id="left" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <label id="logo" style="font-size:30px;margin-top: 15px;">
+                    <a href="accountInfor.html">Bker-eBanking</a></label>
+            </div>
+            <!--
+            <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0"></div>
+            
+            <div id="right" class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-top: 30px">
+                <label id="user">
+                    <b style="font-size: 16px">Nguyen Van A</b>
+                    [<a href="login.html">Thoat dang nhap</a>]</label>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <div id="content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="min-height: 460px; padding:10px;">
+        
+      
+        
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="right" class="panel panel-info">
+                <div class="panel-heading">Lấy mật khẩu</div>
+                
+                <form class="form-horizontal" action="" method="">
+                  
+                    <div class="panel-body" style="margin-top:0px">
+                    <div><h3><label>Lấy lại mật khẩu</label></h3></div>
+                    <div class="col-sm-offset-1" style="margin-top: 20px">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Email</label>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                     
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Mã xác nhận</label>
+                            <div class="col-sm-5">
+                                <img src="images/maxacnhan.png" alt="" class="img-thumbnail" style="height: 50px; width: 140px">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+               
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Nhập mã xác nhận</label>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control" placeholder="Mã xác nhận">
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 20px">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                                <button type="submit" class="btn btn-primary">Hoàn thành</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a class="btn btn-primary" href="login.html" role="button">Trở về đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </form> 
+
+            </div>
+        </div>  
+    </div>
+    
+    <div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+        <div id="contact">19001009</div>
+        <div id="email">bker.ebanking@fpt.com.vn</div>
+        <div id="address">20th Floor, tòa nhà Kaengnam 72 Phạm Hùng</div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('#menu1').click(function(){
+                $('#menu-item1').slideToggle();
+            })
+
+            $('#menu2').click(function(){
+                $('#menu-item2').slideToggle();
+            })
+
+            $('#menu3').click(function(){
+                $('#menu-item3').slideToggle();
+            })
+
+            $('#menu4').click(function(){
+                $('#menu-item4').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
